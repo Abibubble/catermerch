@@ -1,0 +1,92 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #263845;
+    color: #fff;
+    height: calc(100vh - 164px);
+    font-family: 'Lato';
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+}
+
+a {
+    color: white;
+}
+
+.border {
+    border: 2px solid #fff !important;
+}
+
+.border-black {
+    border: 2px solid black !important;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.tap-target {
+    width: 48px;
+    height: 48px;
+}
+
+/* -------------------------------- Buttons */
+
+.shop-now-btn {
+    min-width: 260px;
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-black:focus,
+.btn-black:hover,
+.btn-black:active {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.btt-button {
+    height: 48px;
+    width: 48px;
+    position: fixed;
+    right: 10px;
+    bottom: 100px;
+    background-color: #000;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on XL screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* Fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+} 
